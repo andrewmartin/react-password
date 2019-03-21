@@ -37,7 +37,7 @@ export default class Password extends Component {
 
     return (
       <>
-        <input className={classNames} onChange={this.onChange} type="text" />
+        <input className={classNames} onChange={this.onChange} type="password" />
         {!!errors.length && (
           <div className="info has-error">
             {errors.map(msg => (

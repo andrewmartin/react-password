@@ -36,14 +36,14 @@ const withPassword = validation => Child => {
     };
 
     render() {
-      const { onValid, onInvalid, ...restProps } = this.props;
+      const { type, onValid, onInvalid, ...restProps } = this.props; // removing type and forcing password
       const { errors } = this.state;
 
       const classNames = ['ant-input', errors.length && 'is-invalid'].filter(Boolean).join(' '); // would probably use `classnames` library here
 
       return (
         <>
-          <Child className={classNames} onChange={this.onChange} {...restProps} />
+          <Child type="password" className={classNames} onChange={this.onChange} {...restProps} />
           {!!errors.length && (
             <div className="info has-error">
               {errors.map(msg => (
