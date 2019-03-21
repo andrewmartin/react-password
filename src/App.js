@@ -29,6 +29,10 @@ class App extends Component {
 
     return (
       <main className="wrapper">
+        <h2>React Password Component Demo</h2>
+        <p>
+          Built by <a href="https://andrewmart.in">Andrew Martin</a>
+        </p>
         <div className="ant-layout-content">
           <div className="ant-row ant-form-item">
             <label className="ant-form-item-label">Password</label>
