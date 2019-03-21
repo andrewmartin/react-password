@@ -54,6 +54,7 @@ class App extends Component {
               Password with limited, configureable validations. Random set chosen on page refresh.
             </label>
             <div className="info">
+              <h4>Selected validations:</h4>
               {RANDOM_VALIDATIONS.slice(0, 3)
                 .map(fn => fn(' 123 ')) // this will fail all existing validations, just to output their error msg
                 .map(name => (
